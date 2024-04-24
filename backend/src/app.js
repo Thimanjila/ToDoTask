@@ -1,0 +1,13 @@
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+const taskRouter = require("../src/api/router/task.routes.js");
+
+app.use("/tasks", taskRouter);
+
+module.exports = app;

@@ -1,0 +1,23 @@
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #2a2929;
+
+  .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .task button {
+    margin-left: 10px;
+  }
+}
